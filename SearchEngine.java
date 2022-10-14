@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 class Search implements URLHandler {
     ArrayList<String> stringList = new ArrayList<>();
@@ -15,7 +16,7 @@ class Search implements URLHandler {
                 String[] parameters = url.getQuery().split("=");
                 if (parameters[0].equals("s")) {
                     stringList.add(parameters[1]);
-        fj            return stringList.toString();
+                    return stringList.toString();
                 }
             }
             else if (url.getPath().contains("/search")) {
