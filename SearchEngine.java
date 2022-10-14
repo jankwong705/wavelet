@@ -15,7 +15,7 @@ class Search implements URLHandler {
                 String[] parameters = url.getQuery().split("=");
                 if (parameters[0].equals("s")) {
                     stringList.add(parameters[1]);
-                    return stringList.toString();
+        fj            return stringList.toString();
                 }
             }
             else if (url.getPath().contains("/search")) {
